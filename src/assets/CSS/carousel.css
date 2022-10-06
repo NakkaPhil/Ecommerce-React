@@ -1,0 +1,16 @@
+.carousel-inner{
+    height: 350px;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.carousel-image{
+    height: 90%;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+.carousel-item{
+    height: 350px;
+    padding: 1rem;
+}

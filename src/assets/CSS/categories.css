@@ -1,0 +1,9 @@
+.categories{
+    font-weight: 700;
+    cursor: pointer;
+    transition: color .150s ease;
+}
+
+.categories:hover{
+    color: rgb(57, 57, 95);
+}
