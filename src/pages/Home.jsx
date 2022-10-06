@@ -4,15 +4,11 @@ import axios from 'axios'
 import MonInput from '../components/MonInput'
 import ProductCard from '../components/ProductCard'
 import FilterCards from '../components/FilterCards'
-import { setProducts, setProductsThunk } from '../store/slices/products.slice'
 
 export default function Home() {
-  const isLoading = useSelector((state) => state.isLoading)
   const products = useSelector((state) => state.products)
   const [productsFiltered, setProductsFiltered] = useState([])
-  const dispach = useDispatch()
 
-  const [category, setCategory] = useState('')
   const [categories, setCategories] = useState([])
   
   //Setting categories
@@ -40,7 +36,6 @@ export default function Home() {
       const nameProduct = product.title.split(' ')[0]
       if(nameProduct == name[0]) return product
     })
-    //console.log(filtered)
     setProductsFiltered(filtered)
   }
   

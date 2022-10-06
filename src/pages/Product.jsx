@@ -16,12 +16,9 @@ export default function Product() {
   },[id])
   const products = useSelector(state => state.products)
   const product = useSelector(state => state.product)
+
   const cat = product.category;
   const relatedProducts = products.filter((product) => product.category.name === cat)
-
-  const goProduct = (id) => {
-    navigate(`/product/${id}`)
-  }
 
 
   return (

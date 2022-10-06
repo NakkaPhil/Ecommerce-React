@@ -14,7 +14,7 @@ export default function MonNavbar() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
 
-  console.log(cartState)
+
   useEffect(() => {
     dispatch(getCartThunk());
   }, []);
@@ -68,7 +68,7 @@ export default function MonNavbar() {
                   <div className='cartItem' key={cartItem.id}>
                     <div className="cartItemText">
                       <h5>{cartItem.title}</h5>
-                      <p>$ {cartItem.price}</p>
+                      <p>$ {parseInt(cartItem.price)}</p>
                     </div>
                     <p><b>Quantity: </b>{cartItem.productsInCart?.quantity}</p>
                     <Button variant="danger" onClick={()=> deleteCartItem(cartItem.id)}>Eliminar</Button>{' '}

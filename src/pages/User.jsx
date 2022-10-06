@@ -15,9 +15,9 @@ export default function User() {
       <Card>
         <Card.Header className='text-center'>Logout</Card.Header>
         <Card.Body>
-          <Card.Title>fdsf</Card.Title>
+          <Card.Title>User</Card.Title>
           <Card.Text>
-            With supporting text below as a natural lead-in to additional content.
+           Your session is OK
           </Card.Text>
           <Button variant="danger" onClick={logout}>Logout</Button>
         </Card.Body>

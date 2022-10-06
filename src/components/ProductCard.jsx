@@ -1,4 +1,4 @@
-import React, {useState ,useEffect } from 'react'
+import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import {useNavigate} from 'react-router-dom';
@@ -7,10 +7,6 @@ import LoadingScreen from './LoadingScreen';
 export default function ProductCard({product}) {
 
     const navigate = useNavigate()
-    const [id, setId] = useState()
-    useEffect(()=>{
-        setId(product.id)
-    },[])
     
     const checkProduct = (id)=> {
         navigate(`/product/${id}/`)

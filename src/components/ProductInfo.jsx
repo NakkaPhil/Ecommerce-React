@@ -6,11 +6,7 @@ export default function ProductInfo({product}) {
   const dispach = useDispatch()
 
   const [quantity, setQuantity] = useState(1)
-/*
-  useEffect(()=>{
-    setQuantity(1)
-  },[quantity])
-  */
+  
   const plus = ()=> {
     setQuantity(quantity+1)
   }
