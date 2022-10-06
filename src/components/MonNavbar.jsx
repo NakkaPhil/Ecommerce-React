@@ -71,7 +71,7 @@ export default function MonNavbar() {
                       <p>$ {parseInt(cartItem.price)}</p>
                     </div>
                     <p><b>Quantity: </b>{cartItem.productsInCart?.quantity}</p>
-                    <Button variant="danger" onClick={()=> deleteCartItem(cartItem.id)}>Eliminar</Button>{' '}
+                   
                   </div>
                 ))}
               </div>
@@ -80,7 +80,7 @@ export default function MonNavbar() {
                   <h4 className="total">Total:</h4>
                   <p>$ {total}</p>
                 </div>
-                <button className='addToCart' onClick={()=> purchaseCartThunk()}>Checkout </button>
+                <button className='addToCart' onClick={()=> dispatch(purchaseCartThunk())}>Checkout </button>
               </div>
           </div>
 
